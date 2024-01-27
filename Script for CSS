@@ -1,0 +1,36 @@
+Javascript Code Injector for YOUTUBE ONLY:
+https://docs.google.com/document/d/18Xcj8VeReHEntZK3Quu479tvAx39QeOY-TCwdlazkpY/edit?usp=sharing
+Or:
+/* Remove YouTube Ads */
+.ytd-display-ad-renderer,
+.ytp-ad-overlay-container,
+.ytp-ad-module,
+.ytp-ad-image-overlay,
+.ytp-ad-text-overlay {
+    display: none !important;
+}
+
+/* Advanced Pre-Ad Handling */
+.ytp-ad-preview-container {
+    display: none !important;
+}
+
+.ytp-ad-overlay-slot {
+    position: relative !important;
+    pointer-events: none !important;
+}
+
+.ytp-ad-overlay-slot::before {
+    content: "Advertisement" !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    color: #fff !important;
+    padding: 10px 20px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    border-radius: 4px !important;
+    z-index: 9999 !important;
+}
